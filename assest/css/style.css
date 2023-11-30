@@ -1,93 +1,107 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
+
 /* Header section start */
-header{
+header {
     width: 100vw;
     height: 50px;
-    background:#002e82;
+    background: #002e82;
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 100px;
 }
+
 /* Header section end */
 
 /* banner section start */
-.banner{
+.banner {
     width: 100%;
-    height: 600px ;
+    height: 600px;
     padding: 0px 100px;
     align-items: center;
     color: #fff;
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/lanxessdialight-2.jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/lanxessdialight-2.jpeg");
     background-size: cover;
-    
+
 }
-.banner h1{
+
+.banner h1 {
     font-size: 50px;
     font-weight: normal;
 }
-.banner h1 span{
+
+.banner h1 span {
     font-size: 75px;
     display: block;
     font-weight: 600;
 }
-.banner aside{
+
+.banner aside {
     background: #002e82;
     padding: 20px;
     text-align: center;
     border-radius: 7px;
 }
+
 .banner aside input[type],
 .banner aside textarea,
-.banner aside button{
+.banner aside button {
     width: 100%;
-    height: 40px; 
+    height: 40px;
     margin: 5px 5px;
 }
-.phone,.last{
+
+.phone,
+.last {
     padding-left: 7px;
 }
+
 /* banner section end */
 
 /* feature section start */
-.feature{
+.feature {
     width: 100%;
     height: auto;
     color: #002e82;
-    display:flex;
+    display: flex;
     padding: 60px 100px;
     justify-content: space-between;
 }
-.feature div{
+
+.feature div {
     width: 30%;
     height: 400px;
 }
-.feature div h2{
+
+.feature div h2 {
     font-size: 40px;
     margin-bottom: 7px;
 }
-.feature div p{
+
+.feature div p {
     margin-top: 7px;
     font-size: 18px;
     text-align: justify;
-    
+
 }
-.feature div img{
+
+.feature div img {
     width: 350px;
     height: 250px;
 
 }
+
 /* feature section end */
 
 /* about us section start */
-.about{
+.about {
     width: 100%;
     height: auto;
     background: #002e82;
@@ -95,15 +109,18 @@ header{
     text-align: center;
     color: #fff;
 }
-.about h2{
+
+.about h2 {
     font-size: 35px;
     margin-bottom: 7px;
 }
-.about p{
+
+.about p {
     font-size: 18px;
     font-weight: normal;
 }
-.about button{
+
+.about button {
     color: #fff;
     background: #002e82;
     margin-top: 10px;
@@ -112,81 +129,199 @@ header{
     border: 2px solid #fff;
     border-radius: 5px;
 }
+
 /* about us section end */
 /* service section start */
-.service{
+.service {
     width: 100%;
     height: auto;
     padding: 0px 100px;
 }
-.service .upper, .service .lower{
-   display: flex;
+
+.service .upper,
+.service .lower {
+    display: flex;
 }
-.service .image{
-    width:50% ;
+
+.service .image {
+    width: 50%;
 }
-.service .image img{
+
+.service .image img {
     width: 635px;
     height: 500px;
 }
+
 /* /service section end */
 /* footer section start */
-footer{
+footer {
     width: 100%;
     height: auto;
     color: #fff;
-    background:#002e82;
+    background: #002e82;
     padding: 25px 100px;
     text-align: center;
     font-weight: bold;
 }
+
 /* /footer section end */
 
 /* media query section start */
 @media screen and (max-width:992px) {
-    header{
+    header {
         padding: 10px;
     }
-    header h2{
+
+    header h2 {
         font-size: 20px;
     }
-    .banner{
+
+    .banner {
         padding: 10px;
     }
-    .feature{
+
+    .feature {
+        padding: 50px 0px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 10px;
+       
     }
-    .feature div img{
+
+    .feature div img {
         width: 300px;
         height: 250px;
+    }
+
+    .feature div h2 {
+        font-size: 20px;
+        margin-bottom: 7px;
+        margin-top: 7px;
+    }
+
+    .feature div p {
+        margin-top: 7px;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .about {
+        margin-top: 10px;
+        padding: 20px;
+    }
+
+    .service {
+        padding: 10px;
+    }
+
+    .service .upper,
+    .service .lower
+     {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .service .image,
+    .service .content
+     {
+        width: auto;
+    }
 }
-.feature div h2{
-    font-size: 20px;
-    margin-bottom: 7px;
-    margin-top: 7px;
+
+@media screen and (max-width:762px) {
+    header {
+        padding: 10px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    .banner {
+        padding: 10px;
+    }
+
+    .feature {
+        padding: 50px 14px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .feature div {
+        width: 50%;
+        height: 400px;
+    }
+
+    .feature div img {
+        width: 200px;
+        height: 250px;
+    }
+    .feature div h2 {
+    
+        font-size: 20px;
+        margin-bottom: 7px;
+        margin-top: 50px;
+    }
+
+    .feature div p {
+        margin-top: 7px;
+        font-size: 15px;
+        /* text-align: justify; */
+    }
+
+    .about {
+        margin-top: 10px;
+        padding: 20px;
+    }
+
+    .service {
+        padding: 10px;
+    }
+
+    .service .upper,
+    .service .lower
+     {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .service .image,
+    .service .content
+     {
+        width: auto;
+    }
 }
-.feature div p{
-    margin-top: 7px;
-    font-size: 15px;
-    text-align: justify;
+@media screen and (max-width:768px) {
+    header h2{
+        font-size: 14px;
+    }
+    header h2 span{
+        font-size: 10px;
+        text-wrap: nowrap;
+        
+    }
+    .banner{
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+    }
+    .banner h1{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .banner h1 span{
+        display: block;
+        font-size: 56px;
+        font-weight: 600;
+    }
+    .feature div {
+        width: 50%;
+        height: 400px;
+    }
+    
 }
-.about{
-    margin-top: 10px;
-    padding: 20px;
-}
-.service{
-    padding: 10px;
-}
-.service .upper,.service .lower{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.service .image, .service .content{
-    width:auto;
-}
-}
+
 /* media query section end */
